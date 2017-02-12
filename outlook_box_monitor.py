@@ -45,7 +45,9 @@ while 1:
                                         the_earliest_ReceivedTimestr = the_earliest_ReceivedTime.strftime("%Y.%m.%d %H:%M:%S")
                                     print("boxName: ", str(folder.Name), " - folderName: ", str(subfolder.Name), " - subfolderName: ", str(subsubfolder.Name), " - mails piece: ", str(count), " - the earliest mail ReceivedDatetime: ",str(the_earliest_ReceivedTimestr))
                                     count = 0
+                                    the_earliest_ReceivedTimestr = None
                             except:
+                                the_earliest_ReceivedTimestr = None
                                 count = 0
                                 pass
 
@@ -77,7 +79,9 @@ while 1:
                                     the_earliest_ReceivedTimestr = the_earliest_ReceivedTime.strftime("%Y.%m.%d %H:%M:%S")
                                 print("boxName: ", str(folder.Name), " - folderName: ", str(subfolder.Name), " - mails piece: ", str(count), " - the earliest mail ReceivedDatetime: ", str(the_earliest_ReceivedTimestr))
                                 count = 0
+                                the_earliest_ReceivedTimestr = None
                             except:
+                                the_earliest_ReceivedTimestr = None
                                 count = 0
                                 pass
 
